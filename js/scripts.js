@@ -9,7 +9,7 @@ let pokemonList = [
 //for loop that prints out pokemon and height to index.html
 
 for (let i= 0; i < pokemonList.length; i++) {
-  document.write (pokemonList[i].name + ": " + pokemonList[i].height);
+  document.write (pokemonList[i].name + " - Height: " + pokemonList[i].height);
 
 //Conditional if statement that differentiates pokemon by height
 
