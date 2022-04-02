@@ -27,16 +27,30 @@ let pokemonList = [{
 
 //for loop that prints out pokemon and height to index.html
 
-for (let i = 0; i < pokemonList.length; i++) {
-  document.write(pokemonList[i].name + " - Height: " + pokemonList[i].height);
+/* for (let i = 0; i < pokemonList.length; i++) {
+  document.write(pokemonList[i].name + " - Height: " + pokemonList[i].height); */
+
 
   //Conditional if statement that differentiates pokemon by height
 
-  if (pokemonList[i].height > 1) {
+/*  if (pokemonList[i].height > 1) {
     document.write(" - That is a big Pokemon!")
   } else if (pokemonList[i].height < 0.5) {
     document.write(" - That is a small Pokemon!")
   }
 
-  document.write("<br>");
-}
+  document.write("<br>"); */
+
+
+
+  //foreach loop
+
+    pokemonList.forEach((pokemon) => {
+      document.write("<p>" + pokemon.name + " - Height: " + pokemon.height + "</p>");
+ if(pokemon.height > 1) {
+   document.write( " - That is a big Pokemon!")
+ } else if (pokemon.height < 0.5){
+   document.write(" - That is a small Pokemon!")
+ }
+
+    });
