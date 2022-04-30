@@ -80,7 +80,7 @@ let pokemonRepository = (function() {
     let modal = document.createElement('div');
     modal.classList.add('modal')
 
-    //  add the new modal content (button, title and content)
+    //  add the new modal content (button, title and content = name, height, weight, type, and image)
     let closeButtonElement = document.createElement('button');
     closeButtonElement.classList.add('modal-close');
     closeButtonElement.innerText = 'X';
