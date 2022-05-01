@@ -129,10 +129,6 @@ let pokemonRepository = (function() {
     modalContainer.classList.remove('is-visible');
   }
 
-  //  event listener so showModal function starts on click
-  document.querySelector('#show-modal').addEventListener('click', () => {
-    showModal('Modal title', 'This is the modal content!');
-  });
 
   //  event listener to window for keyboard input esc
   window.addEventListener('keydown', (e) => {
