@@ -74,7 +74,7 @@ let pokemonRepository = (function() {
 
 
   //modal function
-  /*
+
     function showModal(pokemon) {
 
       modalContainer.innerHTML = '';
@@ -148,8 +148,9 @@ let pokemonRepository = (function() {
         hideModal();
       }
     });
-  */
 
+
+/*
   function showModal(pokemon) {
     let modalBody = $(".modal-body");
     let modalTitle = $(".modal-title");
@@ -159,29 +160,27 @@ let pokemonRepository = (function() {
     modalTitle.empty();
     modalBody.empty();
 
-    let nameElement = $("<h1>" + pokemon.name + "</h1>");
-    let imageElementFront = $('<img class="modal-img" style = "width:50%">');
-    imageElementFront.attr("src", pokemon.imageUrlFront);
-    let imageElementBack = $('<img class="modal-img" style="width:50%">');
-    imageElementBack.attr("src", pokemon.imageUrlBack);
+    let nameElement = $("<h2>" + pokemon.name + "</h2>");
+    let imageElement = $('<img class="modal-img" style = "width:50%">');
+    imageElement.attr("src", pokemon.imageUrl);
+
 
     let heightElement = $("<p>" + "height : " + pokemon.height + "</p>");
     let weightElement = $("<p>" + "weight : " + pokemon.weight + "</p>");
     let typesElement = $("<p>" + "types : " + pokemon.types + "</p>");
-    let abilitiesElement = $("<p>" + "abilities : " + pokemon.abilities + "</p>");
+
 
     modalTitle.append(nameElement);
-    modalBody.append(imageElementFront);
-    modalBody.append(imageElementBack);
+    modalBody.append(imageElement);
+
     modalBody.append(heightElement);
     modalBody.append(weightElement);
     modalBody.append(typesElement);
-    modalBody.append(abilitiesElement);
+
 
   }
 
-
-
+*/
   return {
     add: add,
     getAll: getAll,
