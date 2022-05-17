@@ -57,6 +57,10 @@ body {
   display: block;
 }
 
+.page-container {
+  margin-top: 60px;
+}
+
 .button-class {
   background-color: :#4caf50;
   /*Green*/
